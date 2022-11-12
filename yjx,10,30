@@ -9,3 +9,15 @@ int main()
 	}
 	return 0;
 }
+#include<stdio.h>/*1~100之间的奇数*/
+int main()
+{
+	int i;
+	while(i<=100)
+	{
+		if(i%2==1)
+		printf("%3d",i);
+		i++;
+	}
+	return 0;
+}
