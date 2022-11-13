@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h>/*斐波那契数*/
 int main()
 {
 	int i,a[20];
