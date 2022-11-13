@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<stdio.h>/*星号的图形*/
 int main()
 {
 	int i,j,k;
