@@ -1,0 +1,16 @@
+#include<stdio.h>/*判断年份是否为闰年*/
+int main()
+{
+	int year;
+	scanf("%d",&year);
+	if(year%4==0)
+	{
+		if(year%100==0)
+		printf("not leap");
+		else
+		printf("is leap");		
+	}
+	else
+	printf("not leap");
+	return 0;
+}
