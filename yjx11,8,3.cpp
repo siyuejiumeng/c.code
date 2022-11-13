@@ -1,4 +1,4 @@
-#include<stdio.h>//求平均分，去掉最高分和最低分
+#include<stdio.h>/*姹傚钩鍧囧垎锛屽幓鎺夋渶楂樺垎鍜屾渶浣庡垎*/
 int main()
 {
 	int i,a[10],sum=0,max,min;
