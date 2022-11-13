@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()/*1的阶乘加到n的阶乘*/
+{
+	int i=1,ret=1,n=0,sum=0;
+	for(n=1;n<=4;n++)
+	{
+	ret=ret*n;
+	sum=sum+ret;
+	}
+	printf("sum=%d",sum);
+	
+	return 0;
+}
+#include<stdio.h>/*求n的阶乘*/
+主函数（）
+{
+	int i=0;
+	int ret=1;
+	int n=0;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		ret=ret*i;
+	}
+	printf("n的阶乘=%d",ret);
+	
+	return 0;
+}
