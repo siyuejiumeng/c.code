@@ -1,0 +1,48 @@
+#include<stdio.h>/*设置一个有10道随机普通算法题的小程序，包含加减乘法*/
+#include<stdlib.h>
+#include<time.h>
+#define N 10
+int main()
+{
+	int i,right=0,error=0;
+	int a,b,op,result,input;
+	char ops;
+	srand(time(NULL));
+	printf("请计算下列算术题的结果：\n");
+	for(i=1;i<=N;i++)
+	{
+		printf("第%d题：",i);
+		a=rand()%100;
+		b=rand()%100;
+		op=rand()%3;
+		switch(op)
+		{
+			case 0:ops='+';
+			  result=a+b;
+			  break;
+			case 1:ops='-';
+			  result=a-b;
+			  break;
+			case 2:ops='*';
+			  result=a*b;
+			  break;
+			default:break;
+		}
+		if(a<b&&ops=='-')
+		printf("%d %c %d=",b,ops,a);
+		else
+		printf("%d %c %d=",a,ops,b);
+		scanf("%d",&input);
+		if(result==input)
+		{
+			printf("回答正确！\n");
+			right=right+1;
+		}
+		else
+		{
+			printf("回答错误！\n");
+			error=error+1 ;
+		}
+	}
+	printf("练习结束，你做对了%d道题，做错了%d道题。",right,error);
+}
