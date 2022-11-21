@@ -1,4 +1,4 @@
-#include<stdio.h>/*判断年份是否为闰年*/
+#include<stdio.h>/*判断年份是否为闰年，有问题*/
 int main()
 {
 	int year;
