@@ -1,0 +1,28 @@
+#include<stdio.h>/*输入函数求根*/ 
+#include<math.h>
+void root(double a,double b,double c)
+{
+	double delta,x1,x2;
+	delta=b*b-4*a*c;
+	if(delta>0)
+	{
+		x1=(-b+sqrt(delta))/(2*a);
+		x2=(-b-sqrt(delta))/(2*a);
+		printf("x1=%.2f,x2=%.2f",x1,x2);
+	}
+	else if(delta==0)
+	{
+		x1=x2=-b/(2*a);
+		printf("x1=x2=%.2f",x1);
+	}
+	else
+	printf("无实根。");
+}
+int main()
+{
+	double a,b,c;
+	printf("请输入三个系数：\n");
+	scanf("%lf%lf%lf",&a,&b,&c);
+	root(a,b,c);
+	return 0;
+}
