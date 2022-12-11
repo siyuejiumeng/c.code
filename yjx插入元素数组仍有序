@@ -1,0 +1,30 @@
+#include<stdio.h>/*利用指针插入元素，使数组依然有序*/
+int main()
+{
+	int i,x,arr[10],*p=arr;
+	printf("请输入有序数组：\n");
+	for(i=0;i<10;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	printf("原数组：\n");
+	for(i=0;i<10;i++)
+	printf("%-3d",arr[i]);
+	printf("\n");
+	printf("请输入一个整数：\n");
+	scanf("%d",&x);
+	printf("插入后的数组：\n");
+	for(i=0;i<10;i++)
+	{
+		if(x>*(p+i))
+		printf("%-3d",*(p+i));
+		else
+		{
+			printf("%-3d",x);
+			break;
+		}
+	}
+	for(;i<10;i++)
+	printf("%-3d",*(p+i));
+	return 0;
+}
